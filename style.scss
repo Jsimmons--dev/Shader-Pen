@@ -1,0 +1,88 @@
+//* {
+//outline: 1px solid salmon;
+//}
+$codepen-button-outline :#343436;
+$codepen-button-icon :#AEAEAE;
+$codepen-button-border-radius: 2px;
+$codepen-button-padding: 10px 16px;
+$codepen-button-margin: 0px 10px 0px 0px;
+$codepen-button-color: #FFF;
+$codepen-font-family: "Lato";
+$codepen-edit-grey: #1d1f20;
+body {
+background:black;
+}
+.grey{
+	color:grey;
+}
+
+.ace_scrollbar {
+	display: none !important;
+}
+.edit-bucket {
+}
+
+.top-bucket {
+	display:flex;
+	flex-direction:row-reverse;
+	height:6vh;
+}
+
+.splitter {
+	height:5px;
+	background: $codepen-button-outline;
+	margin: 5px 0px;
+}
+
+
+.codepen-button {
+	border: 3px solid $codepen-button-outline;
+	border-radius: $codepen-button-border-radius;
+	margin: $codepen-button-margin;
+	padding: $codepen-button-padding;
+	background: black;
+	color: $codepen-button-icon;
+	font-size: 1em;
+	user-select: none;
+	touch-callout: none;
+	display:inline-block;
+}
+
+#container {
+	overflow:hidden;
+}
+
+.codepen-button:hover{
+	background:#555555;
+}
+
+.codepen-button:active{
+	margin:1px 10px -1px 0px;
+}
+
+.codepen-button > p {
+	font-family: $codepen-font-family;
+	display:inline;
+	color:white;
+}
+
+.bottom-bucket {
+	width:100%;
+	background:green;
+	height:24vh;
+	display:flex;
+}
+
+#edit-vertex-shader {
+	height:100%;
+	width:50%;
+	display:inline-block;
+	//background: $codepen-edit-grey;
+}
+
+#edit-fragment-shader {
+	height:100%;
+	width:50%;
+	display:inline-block;
+	//background: $codepen-edit-grey;
+}

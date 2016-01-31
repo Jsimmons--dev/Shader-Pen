@@ -1,0 +1,60 @@
+body {
+  background: black; }
+
+.grey {
+  color: grey; }
+
+.ace_scrollbar {
+  display: none !important; }
+
+.top-bucket {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 6vh; }
+
+.splitter {
+  height: 5px;
+  background: #343436;
+  margin: 5px 0px; }
+
+.codepen-button {
+  border: 3px solid #343436;
+  border-radius: 2px;
+  margin: 0px 10px 0px 0px;
+  padding: 10px 16px;
+  background: black;
+  color: #AEAEAE;
+  font-size: 1em;
+  user-select: none;
+  touch-callout: none;
+  display: inline-block; }
+
+#container {
+  overflow: hidden; }
+
+.codepen-button:hover {
+  background: #555555; }
+
+.codepen-button:active {
+  margin: 1px 10px -1px 0px; }
+
+.codepen-button > p {
+  font-family: "Lato";
+  display: inline;
+  color: white; }
+
+.bottom-bucket {
+  width: 100%;
+  background: green;
+  height: 24vh;
+  display: flex; }
+
+#edit-vertex-shader {
+  height: 100%;
+  width: 50%;
+  display: inline-block; }
+
+#edit-fragment-shader {
+  height: 100%;
+  width: 50%;
+  display: inline-block; }

@@ -1,25 +1,32 @@
 <!Doctype html>
 <head>
 	<title>Shader Pen</title>
+	<link rel="stylesheet" href="octicons/octicons.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"   type="text/css">
 </head>
 	<body>	
+			<div class="top-bucket">
+			<button class="codepen-button" onclick="updateShaders()">
+			<span class="octicon octicon-sync"></span>
+			<p> Run</p>
+			</button>
+			<button class="codepen-button">
+			<span class="octicon octicon-cloud-upload"></span>
+			<p> Save</p>
+			</button>
+			</div>
+			<div class="splitter" id="top-splitter"></div>
 			<div id="container"></div>
+			<div class="splitter" id="view-splitter"></div>
+			<div class="bottom-bucket" id="code-bucket">
+					<div class="edit-bucket" id="edit-vertex-shader"></div>
+					<div id="shader-splitter"></div>
+					<div class="edit-bucket" id="edit-fragment-shader"></div>
+			</div>
 	</body>
-	<script src="threejs/build/three.js"></script>
-	<script type="x-shader/x-vertex" id="vertexShader">
-		varying vec2 vUv;
-
-		void main() {
-			vUv = uv;
-			gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0);
-		}
-	</script>
-	<script type="x-shader/x-vertex" id="fragmentShader">
-		varying vec2 vUv;
-
-		void main(){
-			gl_FragColor = vec4(vec3(vUv,0. ), 1. );
-		}
-	</script>
+	<script src=" https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src=" https://cdnjs.cloudflare.com/ajax/libs/three.js/r73/three.min.js"></script>
+	<script src="ace-min/ace.js"></script>
 	<script type="text/javascript" id="mainCode" src="main.js"></script>
 </html>
